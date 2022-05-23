@@ -16,8 +16,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CardPaymentService {
-  @Value("${mercado_pago_sample_access_token}")
-  private String mercadoPagoAccessToken;
+  //@Value("${mercado_pago_sample_access_token}")
+  private String mercadoPagoAccessToken = "";
 
   public PaymentResponseDTO processPayment(CardPaymentDTO cardPaymentDTO) {
     try {
